@@ -15,3 +15,20 @@ let isLoggedIn=false;
 //undefined
 //symbol apn me use karenge
 console.log(typeof undefined);
+
+
+//primitive data types
+//7 types of data types
+//number
+//string
+//boolean
+//null
+//undefined
+//symbol
+//bigint
+
+//non primitive data types
+//reference data types
+//Array Objects,functions
+//javasCRIPT IS DYNAMICALLY TYPED LANGUAGE
+// big int ka data type 
