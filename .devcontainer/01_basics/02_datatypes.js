@@ -32,3 +32,13 @@ console.log(typeof undefined);
 //Array Objects,functions
 //javasCRIPT IS DYNAMICALLY TYPED LANGUAGE
 // big int ka data type 
+//stack memory me copy milti hai where as heap memory me reference milta hai 
+//stack (primitive data types) heap (non primitive data types)
+let userOne={
+    email:"shivnand@gmail.com",
+    password:"shivnand123",
+    upi:"shivnand@okhdfcbank"
+}
+let userTwo=userOne;
+userTwo.email="shiv@gmail.com";
+console.log(userOne.email);
