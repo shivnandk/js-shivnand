@@ -1,0 +1,38 @@
+//javascript execution context
+//1. global execution context this is the default execution context
+//2. function execution context
+//3. eval function execution context
+
+
+//execution context is created in two phases
+//1 memory creation phase
+//global execution context
+//1.1 create global object(this)
+
+
+//2 memory phase
+// val1 undefined
+// val2 undefined
+// addnum undefined
+//result undefined
+//result2 undefined
+
+//3 code executin phase
+// val1 = 10;
+// val2 = 20;
+//addnum  
+//new variale environment
+//memory creation phase 
+//execution phase
+//val1 undefined
+//val2 undefined
+//total undefined
+//num1=10
+//num2=20
+//total=30
+//it will return the return to the global execution context
+
+
+
+
+//2 code execution phase
