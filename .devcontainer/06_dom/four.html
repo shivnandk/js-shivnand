@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivnand learning DOM</title>
+    <style>
+        .bg-black {
+          background-color: black;
+          color: white;
+          padding: 10px;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <ul class="language">
+        <li >javascript</li>
+        
+    </ul>
+    <script>
+        function addingLanguage(langName){
+            const li=document.createElement('li');
+            li.innerHTML=`${langName}`;
+            document.querySelector('.language').appendChild(li);
+        }
+        addingLanguage('python');
+        addingLanguage('java');
+        addingLanguage('c++');
+        addingLanguage('c#');
+
+        function addOpLanguage(langname){
+            const li=document.createElement('li');
+
+            //use append child it is more optimized
+            li.appendChild(document.createTextNode(langname));
+            document.querySelector('.language').appendChild(li);
+        }
+
+        addOpLanguage('ruby');
+
+        //Edit
+        const secondlan=document.querySelector("li:nth-child(2)")
+        const newli=document.createElement('li');
+        newli.textContent='React'
+        secondlan.replaceWith(newli)
+
+        //edit
+        const firstlan=document.querySelector("li:nth-child(1)")
+        firstlan.outerHTML='<li>TypeScript</li>'
+
+        //remove
+        const lastRemove=document.querySelector("li:last-child")
+        lastRemove.remove()
+
+
+    </script>
+</body>
+</html>

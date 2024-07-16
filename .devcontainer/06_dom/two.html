@@ -1,22 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML 5 Boilerplate</title>
+    <style>
+        .bg-black {
+          background-color: black;
+          color: white;
+          padding: 10px;
+        }
+       </style>
     <!-- <link rel="stylesheet" href="style.css"> -->
-  </head>
-  <body style="background-color: black;">
+</head>
+<body class="bg-black">
 
+<div class="parent">
+    <!-- <h1>Hello</h1> -->
 
-    <div class="parent">
-       <h1>Hello</h1>
-        <div class="day">Monday</div>
-        <div class="day">Tuesday</div>
-        <div class="day">WednesDay</div>
-        <div class="day">Thursday</div>
-    </div>
-	<script src="index.js"></script>
-  </body>
+    <!-- nodeList disscussion -->
+    <div class="day">Monday</div>
+    <div class="day">Tuesday</div>
+    <div class="day">Wednesday</div>
+    <div class="day">Thursday</div>
+</div>
+
+<script >
+    const parent=document.querySelector('.parent');
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerHTML);
+
+    // for (let index = 0; index < parent.children.length; index++) {
+    //     const element = parent.children[index].innerHTML;
+    //     console.log(element);
+    // }
+    parent.children[1].style.color='yellow';
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    const day1=document.querySelector('.day')
+    // console.log(day1)
+    // console.log(day1.parentElement)
+    // console.log(day1.nextElementSibling)
+    console.log("Nodes", parent.childNodes);
+</script>
+
+</body>
 </html>
